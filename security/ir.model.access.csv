@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_futsal_slot_manager,futsal.slot manager,model_futsal_slot,futsal.group_futsal_manager,1,1,1,1
+access_futsal_slot_officer,futsal.slot officer,model_futsal_slot,futsal.group_futsal_officer,1,0,0,0
+
+access_futsal_weekday,futsal.weekday,model_futsal_weekday,futsal.group_futsal_manager,1,1,1,1
+
+access_futsal_reservation,futsal.reservation,model_futsal_reservation,futsal.group_futsal_manager,1,1,1,1
