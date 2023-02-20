@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- =========================
+         CUSTOM CATEGORY: FUTSAL
+    ========================== -->
+    <record id="module_category_futsal" model="ir.module.category">
+        <field name="name">Futsal Management System</field>
+        <field name="sequence" eval="10"/>
+    </record>
+
+    <!-- =========================
+         GROUP 1: MANAGER
+    ========================== -->
+    <record id="group_futsal_manager" model="res.groups">
+        <field name="name">Futsal Manager</field>
+        <field name="category_id" ref="futsal.module_category_futsal"/>
+    </record>
+
+
+    <!-- =========================
+         GROUP 2: OFFICER
+    ========================== -->
+    <record id="group_futsal_officer" model="res.groups">
+        <field name="name">Futsal Record Officer</field>
+        <field name="category_id" ref="futsal.module_category_futsal"/>
+    </record>
+
+    <!-- =========================
+         MENU RESTRICTIONS (OPTIONAL)
+    ========================== -->
+
+    <!-- Example: restrict Odoo settings or admin menus -->
+    <record id="base.menu_management" model="ir.ui.menu">
+        <field name="groups_id" eval="[(6, 0, [ref('base.group_system')])]"/>
+    </record>
+
+    <!-- Discuss menu (optional restriction) -->
+    <record id="mail.menu_root_discuss" model="ir.ui.menu">
+        <field name="groups_id" eval="[(6, 0, [ref('base.group_system')])]"/>
+    </record>
+
+</odoo>
