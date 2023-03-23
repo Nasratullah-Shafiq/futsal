@@ -20,6 +20,7 @@
                             <t t-esc="o.end_date"/>
                         </p>
 
+
                         <p>
                             <strong>Branch:</strong>
                             <t t-esc="o.branch_id.name if o.branch_id else 'All Branches'"/>
