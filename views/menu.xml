@@ -1,0 +1,15 @@
+<odoo>
+
+    <menuitem id="menu_futsal_root" name="Futsal"/>
+
+<!--    <menuitem id="menu_futsal_booking"-->
+<!--              name="Bookings"-->
+<!--              parent="menu_futsal_root"-->
+<!--              action="action_futsal_reservation"/>-->
+
+<!--    <menuitem id="menu_futsal_field"-->
+<!--              name="Fields"-->
+<!--              parent="menu_futsal_root"-->
+<!--              action="action_futsal_field"/>-->
+
+</odoo>
