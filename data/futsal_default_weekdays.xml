@@ -1,0 +1,31 @@
+<odoo>
+
+    <record id="weekday_sat" model="futsal.weekday">
+        <field name="name">Saturday</field>
+    </record>
+
+    <record id="weekday_sun" model="futsal.weekday">
+        <field name="name">Sunday</field>
+    </record>
+
+    <record id="weekday_mon" model="futsal.weekday">
+        <field name="name">Monday</field>
+    </record>
+
+    <record id="weekday_tue" model="futsal.weekday">
+        <field name="name">Tuesday</field>
+    </record>
+
+    <record id="weekday_wed" model="futsal.weekday">
+        <field name="name">Wednesday</field>
+    </record>
+
+    <record id="weekday_thu" model="futsal.weekday">
+        <field name="name">Thursday</field>
+    </record>
+
+    <record id="weekday_fri" model="futsal.weekday">
+        <field name="name">Friday</field>
+    </record>
+
+</odoo>
