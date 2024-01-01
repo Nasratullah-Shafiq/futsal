@@ -49,7 +49,6 @@
         # Reports - actions before templates
         # 'report/finance_report_action.xml',
 
-
     ],
     # 'assets': {
     #     'web.assets_backend': [
