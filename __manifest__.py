@@ -40,7 +40,6 @@
         # Wizard files
         # 'wizard/views/finance_report_wizard_views.xml',
 
-
         # view files
         'views/futsal_reservation_views.xml',
         # 'views/salary_payment_views.xml',
