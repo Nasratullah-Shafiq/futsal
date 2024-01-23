@@ -47,7 +47,6 @@
         #
         # 'views/sales_views.xml',
 
-
         # Reports - actions before templates
         # 'report/finance_report_action.xml',
 
