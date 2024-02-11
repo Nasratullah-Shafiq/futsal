@@ -1,0 +1,157 @@
+<odoo>
+
+    <!-- =========================
+         TREE VIEW
+    ========================== -->
+    <record id="view_futsal_reservation_tree" model="ir.ui.view">
+        <field name="name">futsal.reservation.tree</field>
+        <field name="model">futsal.reservation</field>
+        <field name="arch" type="xml">
+            <tree decoration-danger="state == 'booked'"
+                  decoration-success="state == 'done'"
+                  decoration-muted="state == 'cancel'">
+
+                <field name="name"/>
+                <field name="customer_id"/>
+                <field name="phone"/>
+                <field name="weekday_id"/>
+                <field name="slot_id"/>
+                <field name="state"/>
+
+            </tree>
+        </field>
+    </record>
+    
+
+
+    <!-- =========================
+         FORM VIEW
+    ========================== -->
+    <record id="view_futsal_reservation_form" model="ir.ui.view">
+        <field name="name">futsal.reservation.form</field>
+        <field name="model">futsal.reservation</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+
+                    <button name="action_done"
+                            type="object"
+                            string="Mark as Done"
+                            class="btn-success"
+                            invisible="state != 'booked'"/>
+
+                    <button name="action_cancel"
+                            type="object"
+                            string="Cancel"
+                            class="btn-secondary"
+                            invisible="state != 'booked'"/>
+
+                    <field name="state"
+                           widget="statusbar"
+                           statusbar_visible="booked,done,cancel"/>
+
+                </header>
+
+                <sheet>
+                    <field name="available_slot_ids" invisible="1"/>
+                    <group>
+                        <field name="name" readonly="1"/>
+                        <field name="customer_id"/>
+                        <field name="phone"/>
+                    </group>
+
+                    <group>
+                        <field name="weekday_id"/>
+                        <field name="slot_id"/>
+                    </group>
+
+                    <group>
+                        <field name="start_time" readonly="1"/>
+                        <field name="end_time" readonly="1"/>
+                    </group>
+
+                    <group>
+                        <field name="notes"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- Search Panel. -->
+    <record id="view_futsal_reservation_search_panel" model="ir.ui.view">
+        <field name="name">futsal.reservation.search.panel</field>
+        <field name="model">futsal.reservation</field>
+        <field name="arch" type="xml">
+            <search>
+
+                <searchpanel>
+
+                    <!-- Filter by Weekday -->
+                    <!--                    <field name="weekday_id"/>-->
+                    <field name="weekday_id" icon="fa-calendar"/>
+                    <field name="slot_id" icon="fa-clock-o"/>
+                    <field name="state" icon="fa-flag"/>
+
+                </searchpanel>
+
+            </search>
+        </field>
+    </record>
+
+
+    <!-- =========================
+         CALENDAR VIEW
+         (Now based on slot times)
+    ========================== -->
+    <record id="view_futsal_reservation_calendar" model="ir.ui.view">
+        <field name="name">futsal.reservation.calendar</field>
+        <field name="model">futsal.reservation</field>
+        <field name="arch" type="xml">
+            <calendar string="Futsal Bookings"
+                      date_start="start_time"
+                      date_stop="end_time"
+                      color="state">
+                <field name="name"/>
+                <field name="customer_id"/>
+                <field name="weekday_id"/>
+                <field name="slot_id"/>
+            </calendar>
+        </field>
+    </record>
+
+
+    <!-- =========================
+         ACTION
+    ========================== -->
+    <record id="action_futsal_reservation" model="ir.actions.act_window">
+        <field name="name">Futsal Bookings</field>
+        <field name="res_model">futsal.reservation</field>
+        <field name="view_mode">tree,calendar,form</field>
+
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first futsal booking
+            </p>
+            <p>
+                Select a weekday and choose an available time slot.
+                Booked slots will automatically disappear from selection.
+            </p>
+        </field>
+    </record>
+
+
+    <!-- =========================
+         MENU
+    ========================== -->
+    <menuitem id="menu_futsal_booking"
+              name="Bookings"
+              parent="menu_futsal_root"
+              action="action_futsal_reservation"/>
+
+</odoo>
