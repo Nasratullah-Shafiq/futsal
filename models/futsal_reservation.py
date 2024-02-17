@@ -31,6 +31,7 @@ class FutsalReservation(models.Model):
         readonly=True,
         store=True
     )
+
     
     # -------------------------
     # AVAILABLE SLOTS (CORE FIX)
@@ -40,6 +41,7 @@ class FutsalReservation(models.Model):
         compute='_compute_available_slots',
         store=False
     )
+    
 
     # -------------------------
     # SLOT (FILTERED)
