@@ -14,6 +14,7 @@ class FutsalReservation(models.Model):
     name = fields.Char(default='New', readonly=True)
 
     customer_id = fields.Many2one('res.partner', required=True)
+    
     phone = fields.Char()
 
     weekday_id = fields.Many2one('futsal.weekday', required=True)
@@ -29,7 +30,7 @@ class FutsalReservation(models.Model):
         readonly=True,
         store=True
     )
-
+    
     # -------------------------
     # AVAILABLE SLOTS (CORE FIX)
     # -------------------------
