@@ -25,7 +25,6 @@ class FutsalReservation(models.Model):
         store=True
     )
 
-
     end_time = fields.Char(
         related='slot_id.end_time',
         readonly=True,
@@ -41,7 +40,7 @@ class FutsalReservation(models.Model):
         compute='_compute_available_slots',
         store=False
     )
-    
+
 
     # -------------------------
     # SLOT (FILTERED)
