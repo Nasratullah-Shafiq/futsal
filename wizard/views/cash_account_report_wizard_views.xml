@@ -16,7 +16,6 @@
                         <field name="total_usd" readonly="1"/>
                         <field name="total_kld" readonly="1"/>
                     </group>
-
                     <group string="Deposit Details">
                         <field name="deposit_lines" readonly="1" string="">
                             <tree>
