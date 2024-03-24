@@ -17,7 +17,6 @@
         <field name="category_id" ref="futsal.module_category_futsal"/>
     </record>
 
-
     <!-- =========================
          GROUP 2: OFFICER
     ========================== -->
