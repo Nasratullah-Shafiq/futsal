@@ -8,7 +8,6 @@
         <field name="name">Futsal Management System</field>
         <field name="sequence" eval="10"/>
     </record>
-
     <!-- =========================
          GROUP 1: MANAGER
     ========================== -->
