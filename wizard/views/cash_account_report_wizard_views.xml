@@ -11,6 +11,7 @@
                         <field name="account_type"/>
                     </group>
 
+
                     <group string="Summary Totals">
                         <field name="total_afn" readonly="1"/>
                         <field name="total_usd" readonly="1"/>
