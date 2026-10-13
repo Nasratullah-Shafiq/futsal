@@ -1,0 +1,258 @@
+<odoo>
+
+    <record id="sat_slot_1" model="futsal.slot">
+        <field name="name">05:00 - 06:30</field>
+        <field name="weekday_id" ref="weekday_sat"/>
+        <field name="start_time">05:00</field>
+        <field name="end_time">06:30</field>
+    </record>
+
+    <record id="sat_slot_2" model="futsal.slot">
+        <field name="name">06:30 - 08:00</field>
+        <field name="weekday_id" ref="weekday_sat"/>
+        <field name="start_time">06:30</field>
+        <field name="end_time">08:00</field>
+    </record>
+
+    <record id="sat_slot_3" model="futsal.slot">
+        <field name="name">08:00 - 09:30</field>
+        <field name="weekday_id" ref="weekday_sat"/>
+        <field name="start_time">08:00</field>
+        <field name="end_time">09:30</field>
+    </record>
+
+    <record id="sat_slot_4" model="futsal.slot">
+        <field name="name">09:30 - 11:00</field>
+        <field name="weekday_id" ref="weekday_sat"/>
+        <field name="start_time">09:30</field>
+        <field name="end_time">11:00</field>
+    </record>
+
+    <record id="sat_slot_5" model="futsal.slot">
+        <field name="name">11:00 - 12:30</field>
+        <field name="weekday_id" ref="weekday_sat"/>
+        <field name="start_time">11:00</field>
+        <field name="end_time">12:30</field>
+    </record>
+
+    <record id="sat_slot_6" model="futsal.slot">
+        <field name="name">12:30 - 14:00</field>
+        <field name="weekday_id" ref="weekday_sat"/>
+        <field name="start_time">12:30</field>
+        <field name="end_time">14:00</field>
+    </record>
+
+    <record id="sat_slot_7" model="futsal.slot">
+        <field name="name">14:00 - 15:30</field>
+        <field name="weekday_id" ref="weekday_sat"/>
+        <field name="start_time">14:00</field>
+        <field name="end_time">15:30</field>
+    </record>
+
+    <record id="sat_slot_8" model="futsal.slot">
+        <field name="name">15:30 - 17:00</field>
+        <field name="weekday_id" ref="weekday_sat"/>
+        <field name="start_time">15:30</field>
+        <field name="end_time">17:00</field>
+    </record>
+
+    <record id="sat_slot_9" model="futsal.slot">
+        <field name="name">17:00 - 18:30</field>
+        <field name="weekday_id" ref="weekday_sat"/>
+        <field name="start_time">17:00</field>
+        <field name="end_time">18:30</field>
+    </record>
+
+    <record id="sat_slot_10" model="futsal.slot">
+        <field name="name">18:30 - 20:00</field>
+        <field name="weekday_id" ref="weekday_sat"/>
+        <field name="start_time">18:30</field>
+        <field name="end_time">20:00</field>
+    </record>
+
+    <record id="sat_slot_11" model="futsal.slot">
+        <field name="name">20:00 - 21:30</field>
+        <field name="weekday_id" ref="weekday_sat"/>
+        <field name="start_time">20:00</field>
+        <field name="end_time">21:30</field>
+    </record>
+
+    <record id="sat_slot_12" model="futsal.slot">
+        <field name="name">21:30 - 23:00</field>
+        <field name="weekday_id" ref="weekday_sat"/>
+        <field name="start_time">21:30</field>
+        <field name="end_time">23:00</field>
+    </record>
+
+    <!--Default Slot Data-->
+    <record id="sun_slot_1" model="futsal.slot">
+        <field name="name">05:00 - 06:30</field>
+        <field name="weekday_id" ref="weekday_sun"/>
+        <field name="start_time">05:00</field>
+        <field name="end_time">06:30</field>
+    </record>
+
+    <record id="sun_slot_2" model="futsal.slot">
+        <field name="name">06:30 - 08:00</field>
+        <field name="weekday_id" ref="weekday_sun"/>
+        <field name="start_time">06:30</field>
+        <field name="end_time">08:00</field>
+    </record>
+
+    <record id="sun_slot_3" model="futsal.slot">
+        <field name="name">08:00 - 09:30</field>
+        <field name="weekday_id" ref="weekday_sun"/>
+        <field name="start_time">08:00</field>
+        <field name="end_time">09:30</field>
+    </record>
+
+    <record id="sun_slot_4" model="futsal.slot">
+        <field name="name">09:30 - 11:00</field>
+        <field name="weekday_id" ref="weekday_sun"/>
+        <field name="start_time">09:30</field>
+        <field name="end_time">11:00</field>
+    </record>
+
+    <record id="sun_slot_5" model="futsal.slot">
+        <field name="name">11:00 - 12:30</field>
+        <field name="weekday_id" ref="weekday_sun"/>
+        <field name="start_time">11:00</field>
+        <field name="end_time">12:30</field>
+    </record>
+
+    <record id="sun_slot_6" model="futsal.slot">
+        <field name="name">12:30 - 14:00</field>
+        <field name="weekday_id" ref="weekday_sun"/>
+        <field name="start_time">12:30</field>
+        <field name="end_time">14:00</field>
+    </record>
+
+    <record id="sun_slot_7" model="futsal.slot">
+        <field name="name">14:00 - 15:30</field>
+        <field name="weekday_id" ref="weekday_sun"/>
+        <field name="start_time">14:00</field>
+        <field name="end_time">15:30</field>
+    </record>
+
+    <record id="sun_slot_8" model="futsal.slot">
+        <field name="name">15:30 - 17:00</field>
+        <field name="weekday_id" ref="weekday_sun"/>
+        <field name="start_time">15:30</field>
+        <field name="end_time">17:00</field>
+    </record>
+
+    <record id="sun_slot_9" model="futsal.slot">
+        <field name="name">17:00 - 18:30</field>
+        <field name="weekday_id" ref="weekday_sun"/>
+        <field name="start_time">17:00</field>
+        <field name="end_time">18:30</field>
+    </record>
+
+    <record id="sun_slot_10" model="futsal.slot">
+        <field name="name">18:30 - 20:00</field>
+        <field name="weekday_id" ref="weekday_sun"/>
+        <field name="start_time">18:30</field>
+        <field name="end_time">20:00</field>
+    </record>
+
+    <record id="sun_slot_11" model="futsal.slot">
+        <field name="name">20:00 - 21:30</field>
+        <field name="weekday_id" ref="weekday_sun"/>
+        <field name="start_time">20:00</field>
+        <field name="end_time">21:30</field>
+    </record>
+
+    <record id="sun_slot_12" model="futsal.slot">
+        <field name="name">21:30 - 23:00</field>
+        <field name="weekday_id" ref="weekday_sun"/>
+        <field name="start_time">21:30</field>
+        <field name="end_time">23:00</field>
+    </record>
+    <!--    Default Slot for Monday. -->
+
+    <record id="mon_slot_1" model="futsal.slot">
+        <field name="name">05:00 - 06:30</field>
+        <field name="weekday_id" ref="weekday_mon"/>
+        <field name="start_time">05:00</field>
+        <field name="end_time">06:30</field>
+    </record>
+
+    <record id="mon_slot_2" model="futsal.slot">
+        <field name="name">06:30 - 08:00</field>
+        <field name="weekday_id" ref="weekday_mon"/>
+        <field name="start_time">06:30</field>
+        <field name="end_time">08:00</field>
+    </record>
+
+    <record id="mon_slot_3" model="futsal.slot">
+        <field name="name">08:00 - 09:30</field>
+        <field name="weekday_id" ref="weekday_mon"/>
+        <field name="start_time">08:00</field>
+        <field name="end_time">09:30</field>
+    </record>
+
+    <record id="mon_slot_4" model="futsal.slot">
+        <field name="name">09:30 - 11:00</field>
+        <field name="weekday_id" ref="weekday_mon"/>
+        <field name="start_time">09:30</field>
+        <field name="end_time">11:00</field>
+    </record>
+
+    <record id="mon_slot_5" model="futsal.slot">
+        <field name="name">11:00 - 12:30</field>
+        <field name="weekday_id" ref="weekday_mon"/>
+        <field name="start_time">11:00</field>
+        <field name="end_time">12:30</field>
+    </record>
+
+    <record id="mon_slot_6" model="futsal.slot">
+        <field name="name">12:30 - 14:00</field>
+        <field name="weekday_id" ref="weekday_mon"/>
+        <field name="start_time">12:30</field>
+        <field name="end_time">14:00</field>
+    </record>
+
+    <record id="mon_slot_7" model="futsal.slot">
+        <field name="name">14:00 - 15:30</field>
+        <field name="weekday_id" ref="weekday_mon"/>
+        <field name="start_time">14:00</field>
+        <field name="end_time">15:30</field>
+    </record>
+
+    <record id="mon_slot_8" model="futsal.slot">
+        <field name="name">15:30 - 17:00</field>
+        <field name="weekday_id" ref="weekday_mon"/>
+        <field name="start_time">15:30</field>
+        <field name="end_time">17:00</field>
+    </record>
+
+    <record id="mon_slot_9" model="futsal.slot">
+        <field name="name">17:00 - 18:30</field>
+        <field name="weekday_id" ref="weekday_mon"/>
+        <field name="start_time">17:00</field>
+        <field name="end_time">18:30</field>
+    </record>
+
+    <record id="mon_slot_10" model="futsal.slot">
+        <field name="name">18:30 - 20:00</field>
+        <field name="weekday_id" ref="weekday_mon"/>
+        <field name="start_time">18:30</field>
+        <field name="end_time">20:00</field>
+    </record>
+
+    <record id="mon_slot_11" model="futsal.slot">
+        <field name="name">20:00 - 21:30</field>
+        <field name="weekday_id" ref="weekday_mon"/>
+        <field name="start_time">20:00</field>
+        <field name="end_time">21:30</field>
+    </record>
+
+    <record id="mon_slot_12" model="futsal.slot">
+        <field name="name">21:30 - 23:00</field>
+        <field name="weekday_id" ref="weekday_mon"/>
+        <field name="start_time">21:30</field>
+        <field name="end_time">23:00</field>
+    </record>
+<!--    Tuesday. Default slot-->
+
+</odoo>
