@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <!-- Partners -->
+        <record id="partner_sultan" model="res.partner">
+            <field name="name">Nasratullah Shafiq</field>
+            <field name="email">nasratullah.shafiq@gmail.com</field>
+        </record>
+
+        <record id="partner_obaid" model="res.partner">
+            <field name="name">Abdullah Shafiq</field>
+            <field name="email">abdullah.shafiq@gmail.com</field>
+        </record>
+
+
+        <!-- Users -->
+        <record id="user_sultan_manager" model="res.users">
+            <field name="name">Nasratullah</field>
+            <field name="login">Nasratullah</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="futsal.partner_nasratullah"/>
+            <field name="groups_id" eval="[
+                (4, ref('base.group_user')),
+                (4, ref('futsal.group_futsal_manager'))
+            ]"/>
+            <field name="share" eval="False"/>
+        </record>
+
+        <record id="user_obaid_manager" model="res.users">
+            <field name="name">Abdullah Shafiq</field>
+            <field name="login">Abdullah</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="futsal.partner_abdullah"/>
+            <field name="groups_id" eval="[
+                (4, ref('base.group_user')),
+                (4, ref('futsal.group_futsal_manager'))
+            ]"/>
+            <field name="share" eval="False"/>
+        </record>
+
+    </data>
+</odoo>
