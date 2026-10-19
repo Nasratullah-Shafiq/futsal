@@ -1,0 +1,132 @@
+<templates xml:space="preserve">
+<t t-name="poultry_dashboard.Main">
+
+<div class="o_poultry_dashboard container-fluid p-4">
+
+    <!-- ================= HEADER ================= -->
+    <div class="dashboard-header mb-4 p-3 bg-white rounded shadow-sm">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+
+            <div>
+                <h2 class="fw-bold mb-1">Poultry Farm Management Dashboard</h2>
+                <div class="text-muted small">Live overview of farm operations</div>
+            </div>
+
+            <div>
+                <select class="form-select form-select-sm w-auto"
+                        t-on-change="onYearChange">
+                    <option value="all">All Years</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                </select>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ================= KPI CARDS ================= -->
+    <div class="row g-4 mb-4">
+
+        <!-- TOTAL BIRDS -->
+        <div class="col-md-3">
+            <div class="card kpi-card p-4 shadow-sm">
+                <div class="kpi-label">Total Birds</div>
+                <div class="kpi-value text-primary">
+                    <t t-esc="state.total_birds"/>
+                </div>
+                <div class="kpi-subtext">Current stock</div>
+            </div>
+        </div>
+
+        <!-- DEATHS -->
+        <div class="col-md-3">
+            <div class="card kpi-card p-4 shadow-sm">
+                <div class="kpi-label">Today Deaths</div>
+                <div class="kpi-value text-danger">
+                    <t t-esc="state.death_count"/>
+                </div>
+                <div class="kpi-subtext">Mortality tracking</div>
+            </div>
+        </div>
+
+        <!-- MORTALITY RATE -->
+        <div class="col-md-3">
+            <div class="card kpi-card p-4 shadow-sm">
+                <div class="kpi-label">Mortality Rate</div>
+                <div class="kpi-value text-warning">
+                    <t t-esc="state.mortality_rate"/>%
+                </div>
+                <div class="kpi-subtext">Loss percentage</div>
+            </div>
+        </div>
+
+        <!-- CASH BALANCE -->
+        <div class="col-md-3">
+            <div class="card kpi-card p-4 shadow-sm">
+                <div class="kpi-label">Cash Balance</div>
+                <div class="kpi-value text-success">
+                    <t t-esc="state.cash_balance"/>
+                </div>
+                <div class="kpi-subtext">Available cash</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ================= SECOND KPI ROW ================= -->
+    <div class="row g-4 mb-4">
+
+        <div class="col-md-4">
+            <div class="card kpi-card p-4 shadow-sm">
+                <div class="kpi-label">Feed Stock</div>
+                <div class="kpi-value text-info">
+                    <t t-esc="state.feed_stock"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card kpi-card p-4 shadow-sm">
+                <div class="kpi-label">Total Purchases</div>
+                <div class="kpi-value text-dark">
+                    <t t-esc="state.purchase_total"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card kpi-card p-4 shadow-sm">
+                <div class="kpi-label">Total Sales</div>
+                <div class="kpi-value text-primary">
+                    <t t-esc="state.sale_total"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ================= CHART SECTION ================= -->
+    <div class="row g-4">
+
+        <!-- DEATH CHART -->
+        <div class="col-lg-6">
+            <div class="card p-4 shadow-sm">
+                <h5 class="mb-3">Mortality Trend</h5>
+                <canvas id="deathChart"></canvas>
+            </div>
+        </div>
+
+        <!-- PROFIT CHART -->
+        <div class="col-lg-6">
+            <div class="card p-4 shadow-sm">
+                <h5 class="mb-3">Profit vs Expense</h5>
+                <canvas id="profitChart"></canvas>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</t>
+</templates>
