@@ -25,6 +25,7 @@ class FutsalReservation(models.Model):
         store=True
     )
 
+
     end_time = fields.Char(
         related='slot_id.end_time',
         readonly=True,
