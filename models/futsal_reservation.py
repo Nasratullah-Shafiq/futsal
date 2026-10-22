@@ -30,7 +30,6 @@ class FutsalReservation(models.Model):
         readonly=True,
         store=True
     )
-
     
     # -------------------------
     # AVAILABLE SLOTS (CORE FIX)
