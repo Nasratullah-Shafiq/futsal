@@ -13,3 +13,4 @@ class FutsalSlot(models.Model):
     start_time = fields.Char()  # "05:00 AM"
     end_time = fields.Char()    # "06:30 AM"
     
+    
