@@ -28,6 +28,7 @@
                                 <th style="padding:6px; border:1px solid #ddd;">Note</th>
                             </tr>
                         </thead>
+                        
                         <tbody>
                             <t t-foreach="o.deposit_lines" t-as="line">
                                 <tr>
