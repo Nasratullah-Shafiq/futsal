@@ -17,7 +17,6 @@ class CashAccountReportWizard(models.TransientModel):
     total_afn = fields.Float(string="Total AFN", readonly=True)
     total_usd = fields.Float(string="Total USD", readonly=True)
     total_kld = fields.Float(string="Total Kaldar", readonly=True)
-
     # Deposit lines
     deposit_lines = fields.One2many(
         'cash.account.report.line',
