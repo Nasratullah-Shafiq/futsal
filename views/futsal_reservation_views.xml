@@ -10,7 +10,6 @@
             <tree decoration-danger="state == 'booked'"
                   decoration-success="state == 'done'"
                   decoration-muted="state == 'cancel'">
-
                 <field name="name"/>
                 <field name="customer_id"/>
                 <field name="phone"/>

@@ -13,6 +13,7 @@ class CashAccountReportWizard(models.TransientModel):
         ('cashier', 'Cashier Account'),
     ], string="Cash Account")
 
+
     # Totals per currency
     total_afn = fields.Float(string="Total AFN", readonly=True)
     total_usd = fields.Float(string="Total USD", readonly=True)
